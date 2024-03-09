@@ -1,0 +1,188 @@
+.h2 {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+
+.skills:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.bar {
+  /* position: relative; */
+  background-color: rgba(255, 255, 255, 0.06);
+  padding: 7px 10px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+.bar div {
+  /* position: relative; */
+  width: 0%;
+  height: 7px;
+  border-radius: 10px;
+  /* background: linear-gradient(to left, #833ab4 0%, #fd1d1d 50%, #fcb045 100%); */
+  background: linear-gradient(
+    90deg,
+    rgba(255, 116, 156, 1) 0%,
+    rgba(133, 175, 255, 1) 100%
+  );
+  /* border: 1px solid #1c97fc;
+    box-shadow: 0 0 5px rgba(28, 151, 252, 0.6); */
+}
+
+.html_bar {
+  animation: html-fill 2s forwards;
+}
+
+.css_bar {
+  animation: css-fill 2s forwards;
+}
+
+.javascript_bar {
+  animation: javascript-fill 2s forwards;
+}
+
+.nextjs_bar {
+  animation: nextjs-fill 2s forwards;
+}
+
+.reactjs_bar {
+  animation: reactjs-fill 2s forwards;
+}
+
+.angularjs_bar {
+  animation: angularjs-fill 2s forwards;
+}
+.java_bar {
+  animation: java-fill 2s forwards;
+}
+.figma_bar {
+  animation: figma-fill 2s forwards;
+}
+.flutter_bar {
+  animation: flutter-fill 2s forwards;
+}
+.sass_bar {
+  animation: sass-fill 2s forwards;
+}
+.tailwind_bar {
+  animation: tailwind-fill 2s forwards;
+}
+.typescript_bar {
+  animation: typescript-fill 2s forwards;
+}
+@keyframes html-fill {
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes css-fill {
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes javascript-fill {
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes nextjs-fill {
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes reactjs-fill {
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes angularjs-fill {
+  100% {
+    width: 20%;
+  }
+}
+@keyframes java-fill {
+  100% {
+    width: 65%;
+  }
+}
+@keyframes flutter-fill {
+  100% {
+    width: 20%;
+  }
+}
+@keyframes figma-fill {
+  100% {
+    width: 60%;
+  }
+}
+@keyframes sass-fill {
+  100% {
+    width: 80%;
+  }
+}
+@keyframes tailwind-fill {
+  100% {
+    width: 80%;
+  }
+}
+@keyframes typescript-fill {
+  100% {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 390px) {
+  .wrapper {
+    min-width: 420px !important;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .wrapper {
+    min-width: 412px !important;
+  }
+}
+.wrapper {
+  width: 60%;
+  min-width: 500px;
+  margin-top: 20px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+}
+
+.skills {
+  width: 100%;
+  padding: 30px 30px;
+  /* background-color: rgba(255, 255, 255, 0.06); */
+  border-radius: 10px;
+  /* box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2); */
+  backdrop-filter: blur(10px);
+}
+
+.container {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-weight: 500;
+  display: grid;
+}
+.fixed-grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+}
