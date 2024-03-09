@@ -2,7 +2,7 @@
 const nextConfig = {
     distDir: 'out',
     reactStrictMode: true,
-    swcMinify: true,
+    swcMinify: false,
     images: {
         unoptimized: true,
         minimumCacheTTL: 60,
