@@ -6,7 +6,7 @@ export default function Dimension() {
         <div className="lg:flex justify-center items-center h-full mt-20 pt-3">
           <div className="flex justify-center">
             <Image
-              src="https://media.discordapp.net/attachments/1059440471409184798/1059440898108309544/DimensionPortalFire.png?ex=65f82cb9&is=65e5b7b9&hm=677eb2fd21a1c4230d07da8a0b47d8b2d381587ef5918f5b7f8deeade006754c&=&format=webp&quality=lossless&width=468&height=468"
+              src="https://dms-api-gateway.mckimkung.in.th/public/dimension/image/img/DimensionPortalFire.png"
               alt=""
               width={580}
               height={580}
