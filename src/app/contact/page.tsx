@@ -103,7 +103,7 @@ export default function Contact() {
                     <div className="  bg-[#e187ff] w-[600px] h-auto rounded-xl border-solid border-4 border-[#c141c4]">
                         <div>
                             <Image
-                                src={data ? (data?.banner) + "?size=600" : "https://media.discordapp.net/attachments/1059440471409184798/1095030450977767527/background.png?ex=65f87314&is=65e5fe14&hm=66f4d766789754ef9fe35b9db839845e8d4d90af0fd8477ab111e9d1d7f9171f&=&format=webp&quality=lossless&width=412&height=231"}
+                                src={data ? (data?.banner) + "?size=600" : "https://cdn.mckimkung.in.th/cdn/1239587143098175630/background.png"}
                                 alt=""
                                 width={300}
                                 height={300}
