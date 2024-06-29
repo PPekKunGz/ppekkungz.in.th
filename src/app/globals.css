@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "LINE Seed Sans TH", sans-serif;
+  --toastify-font-family: "LINE Seed Sans TH", sans-serif;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+}
+
+.km-font {
+  font-family: "LINE Seed Sans TH", sans-serif;
+}
+
+.km-font-mc {
+  font-family: 'MinecraftTen', 'zf terminal', sans-serif;
+  font-weight: 400;
+}
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+@font-face {
+  font-family: "zf terminal";
+  src: url('/ZFTERMIN__.woff2')
+    format("woff2");
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MinecraftTen";
+  src: url('/MinecraftTen-VGORe.woff2')
+    format("woff2");
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LINE Seed Sans TH";
+  src: url(https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@7.3.0/fonts/LINESeedSansTH/LINESeedSansTH-Thin.woff2)
+    format("woff2");
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LINE Seed Sans TH";
+  src: url(https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@7.3.0/fonts/LINESeedSansTH/LINESeedSansTH-Regular.woff2)
+    format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LINE Seed Sans TH";
+  src: url(https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@7.3.0/fonts/LINESeedSansTH/LINESeedSansTH-Bold.woff2)
+    format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LINE Seed Sans TH";
+  src: url(https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@7.3.0/fonts/LINESeedSansTH/LINESeedSansTH-ExtraBold.woff2)
+    format("woff2");
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LINE Seed Sans TH";
+  src: url(https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@7.3.0/fonts/LINESeedSansTH/LINESeedSansTH-Black.woff2)
+    format("woff2");
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #050510;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #050510;
+  }
+}
+
+.underline-animate:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.underline-animate:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.y-scroll {
+  overflow-y: unset;
+}
+
+.grid-button {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
