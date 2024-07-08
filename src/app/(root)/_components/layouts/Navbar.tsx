@@ -1,3 +1,4 @@
+import { ThemeToggle } from "@/components/theme-toggle";
 import Image from "next/image";
 import Link from "next/link"
 
@@ -40,6 +41,7 @@ export default function Navbar() {
                     <Link className="lg:flex md:hidden text-xl cursor-pointer underline-animate relative" href="/contact">
                         สถานะการใช้งาน
                     </Link>
+                    {/* <ThemeToggle/> */}
                 </div>
 
             </nav>

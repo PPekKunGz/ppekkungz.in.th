@@ -1,7 +1,11 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import Navbar from "./(root)/_components/layouts/Navbar";
-import Footer from "./(root)/_components/layouts/Footer";
+import type { Metadata } from 'next'
+import { ThemeProvider } from '@/components/theme-provider'
+import './globals.css'
+import { Suspense } from 'react'
+import Loading from './loading'
+import Navbar from './(root)/_components/layouts/Navbar'
+import Footer from './(root)/_components/layouts/Footer'
+
 export const metadata: Metadata = {
   title: "It's me @PPekKunGzDev",
   description: 'รับทำเว็บไซต์ ขนาดเล็ก รับทำเว็บไซต์รองรับมือถือ และ คอม Responsive Website, @PPekKunGzDev',
@@ -35,18 +39,28 @@ export const metadata: Metadata = {
 
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default async function RootLayout({
+  children
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <html lang="en">
-      <body>
-          <Navbar />
-          {children}
-          <Footer />
+    <html lang='en' suppressHydrationWarning>
+      <body className="">
+        <Suspense fallback={<Loading/>}>
+            <ThemeProvider
+              enableSystem
+              attribute='class'
+              defaultTheme='system'
+              disableTransitionOnChange
+              themes={['light', 'dark']}
+            >
+              <Navbar />
+              {children}
+              <Footer />
+            </ThemeProvider>
+        </Suspense>
       </body>
     </html>
-  );
+  )
 }

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Dimension() {
     return (
-        <div className="lg:flex justify-center items-center h-full mt-20 pt-3">
+        <div className="lg:flex justify-center items-center h-full mt-20 mb-20 pt-3">
           <div className="flex justify-center">
             <Image
               src="https://dms-api-gateway.mckimkung.in.th/public/dimension/image/img/DimensionPortalFire.png"
