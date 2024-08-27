@@ -1,6 +1,15 @@
 [
     {
-        "name": "",
+        "name": "RESETØ",
+        "author": "PPekKunGzDev",
+        "desc": "RESETØ Website",
+        "lang1": "NextJS Framework",
+        "lang2": "Shadcn, Prisma(MariaDB)",
+        "link": "https://reseto.net/",
+        "image": "https://yowasupbro.xn--12cgj3ga1lya4d6c.xn--o3cw4h/public/503_20240213092117.png"
+    },
+    {
+        "name": "Orcabot",
         "author": "PPekKunGzDev",
         "desc": "Orcabot SIIT-TU. (Organization Login)",
         "lang1": "NextJS Framework",
@@ -9,7 +18,7 @@
         "image": "https://i.imgur.com/ikXg6UW.png"
     },
     {
-        "name": "",
+        "name": "Mysite",
         "author": "PPekKunGzDev",
         "desc": "Write & Deploy on 2022.",
         "lang1": "NextJS Framework",
@@ -18,7 +27,7 @@
         "image": "https://ppekkungz-in-th.vercel.app/jobs/ppek_bg_256.jpg"
     },
     {
-        "name": "",
+        "name": "Mysite",
         "author": "PPekKunGzDev",
         "desc": "Rework & Deploy on 2023.",
         "lang1": "NextJS Framework",
@@ -27,7 +36,7 @@
         "image": "https://ppekkungz-in-th.vercel.app/jobs/66_20230410143343.png"
     },
     {
-        "name": "",
+        "name": "Mysite",
         "author": "PPekKunGzDev",
         "desc": "Rework again on 2024.",
         "lang1": "NextJS Framework",
