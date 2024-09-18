@@ -91,3 +91,39 @@ body {
 .grid-button {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
+
+@layer utilities {
+  .theme-toggle {
+    @apply p-2 bg-gray-200 dark:bg-gray-800 rounded-lg transition-all;
+  }
+
+  @keyframes reveal-dark {
+    from {
+      background: #161111;
+      clip-path: polygon(-30% 0, -30% 0, -15% 100%, -10% 115%);
+    }
+    to {
+      background: #17172b;
+      clip-path: polygon(-30% 0, 130% 0, 115% 100%, -10% 115%);
+    }
+  }
+
+  @keyframes reveal-light {
+    from {
+      background: #161111;
+      clip-path: polygon(130% 0, 130% 0, 115% 100%, 110% 115%);
+    }
+    to {
+      background: rgb(32, 17, 36);
+      clip-path: polygon(130% 0, -30% 0, -15% 100%, 110% 115%);
+    }
+  }
+
+  [data-theme='dark'] body {
+    animation: reveal-dark 1.25s ease-in-out forwards;
+  }
+
+  [data-theme='light'] body {
+    animation: reveal-light 1.25s ease-in-out forwards;
+  }
+}

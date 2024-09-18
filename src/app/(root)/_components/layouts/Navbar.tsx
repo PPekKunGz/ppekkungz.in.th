@@ -29,9 +29,9 @@ export default function header() {
                   <Link className="cursor-pointer underline-animate relative" href="/contents">
                   ผลงาน
                   </Link>
-                  <Link className="cursor-pointer underline-animate relative" href="/skills">
+                  {/* <Link className="cursor-pointer underline-animate relative" href="/skills">
                   สกิล/ภาษา
-                  </Link>
+                  </Link> */}
                 </div>
                 
               </div>

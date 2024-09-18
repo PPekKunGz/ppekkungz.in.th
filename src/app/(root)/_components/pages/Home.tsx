@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils"
 
 export default function HomePage() {
   return (
-    <div className="backdrop-blur-xl bg-black/20 w-full h-full py-20">
+    <div className="w-full py-20">
       <div className="flex flex-col justify-center items-center h-full text-white text-4xl" data-aos="zoom-in" data-aos-duration="1000">
         <p>ยินดีต้อนรับเข้าสู่หน้าประวัติของ</p>
         <p className="tracking-[2px] font-bold text-white [text-shadow:2px_2px_2px_rgba(255,255,255,0.6)]">PPekKunGzDev</p>
