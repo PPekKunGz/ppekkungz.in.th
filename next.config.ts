@@ -1,7 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  reactStrictMode: true,
+  images: {
+    domains: ["media.discordapp.net", "dimension-studio.net", "dms-api-gateway.mckimkung.in.th", "cdn-dms.mckimkung.in.th"],
+    unoptimized: true,
+    minimumCacheTTL: 60,
+  },
+  env: {
+    apiUrl: '',
+  }
 };
 
 export default nextConfig;
