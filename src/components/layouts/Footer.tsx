@@ -14,7 +14,7 @@ export default function Footer() {
             <DiscordMessage/>
             {isHomePage && (
                 <div className="lg:w-2/6 w-full">
-                    <InteractiveGridPatternUI />
+                    {/* <InteractiveGridPatternUI /> */}
                 </div>
             )}
             <footer className={`w-full text-primary py-4 text-center text-sm border-t border-white/20 px-4 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60`}>
