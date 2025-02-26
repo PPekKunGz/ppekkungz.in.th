@@ -17,10 +17,8 @@ export default {
     	},
     	extend: {
     		fontFamily: {
-    			clash: [
-    				'ClashDisplay',
-    				'sans-serif'
-    			]
+    			clash: ['ClashDisplay','sans-serif'],
+				five: ['QuinqueFive', 'sans-serif']
     		},
     		colors: {
     			background: 'hsl(var(--background))',
@@ -93,12 +91,22 @@ export default {
     				'30%, 60%': {
     					'background-position': 'calc(100% + var(--shiny-width)) 0'
     				}
-    			}
+    			},
+				fadeIn: {
+					"0%": { opacity: "0" },
+					"100%": { opacity: "1" },
+				  },
+				  fadeOut: {
+					"0%": { opacity: "1" },
+					"100%": { opacity: "0" },
+				  },
     		},
     		animation: {
     			marquee: 'marquee var(--duration) infinite linear',
     			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
-    			'shiny-text': 'shiny-text 8s infinite'
+    			'shiny-text': 'shiny-text 8s infinite',
+				"fade-in": "fadeIn 2s ease-in forwards",
+        		"fade-out": "fadeOut 2s ease-out forwards",
     		}
     	}
     },

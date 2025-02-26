@@ -1,5 +1,6 @@
 import type React from "react"
 import "./globals.css"
+import 'aos/dist/aos.css';
 import GridPatternDashed from "@/components/_components/grid-pattern-dashed"
 import Footer from "@/components/layouts/Footer"
 import Header from "@/components/layouts/Header"

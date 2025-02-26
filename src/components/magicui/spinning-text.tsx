@@ -107,7 +107,7 @@ export function SpinningText({
           {letter}
         </motion.span>
       ))}
-      <span className="sr-only">{children}</span>
+      <span className="sr-only bg-black">{children}</span>
     </motion.div>
   );
 }

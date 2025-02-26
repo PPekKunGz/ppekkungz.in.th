@@ -18,7 +18,7 @@ export function InteractiveGridPatternUI() {
                 squaresClassName="hover:fill-blue-500"
             />
             <Image src={'https://cdn-dms.mckimkung.in.th/1i4nfi1sr/DimensionPortalFull.png'} alt={'dimension studio'} width={250} height={250} draggable="false" className='absolute opacity-60 rounded-xl' />
-            <Link href={'https://dimension-studio.net'} target="_blank" className="absolute bottom-7 rounded-full opacity-60 px-4 py-2 text-xl bg-purple-500 font-medium font-clash">Dimension Studio</Link>
+            <Link href={'https://dimension-studio.net'} target="_blank" className="absolute bottom-7 rounded-full opacity-60 px-4 py-2 text-xl bg-purple-500 font-medium font-clash hover:scale-105 duration-500">Dimension Studio</Link>
         </div>
     );
 }

@@ -7,9 +7,6 @@ const nextConfig: NextConfig = {
     unoptimized: true,
     minimumCacheTTL: 60,
   },
-  env: {
-    apiUrl: '',
-  }
 };
 
 export default nextConfig;

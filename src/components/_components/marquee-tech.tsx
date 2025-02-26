@@ -4,7 +4,7 @@ import React from "react"
 import { Sparkle } from "lucide-react";
 import { Marquee } from "@/components/magicui/marquee";
 
-const items = ["Mentor", "Websites", "Designing", "Graphics", "Animations", "Community"] as const
+const items = ["Mentor", "Websites", "Frontend", "Designing", "JavaScript", "TypeScript", "NextJS", "Java", "Mod Creator", "Flutter", "NodeJS", "ExpressJS", "MariaDB", ""] as const
 type Item = (typeof items)[number]
 
 export default function MarqueeTech() {

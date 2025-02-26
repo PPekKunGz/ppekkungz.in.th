@@ -1,15 +1,12 @@
-export const fetchProject = async () => {
-  try {
-    const response = await fetch(`${process.env.apiUrl}/projects`);
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error('Error fetching project data:', error);
-    throw error;
-  }
-};
+import type { IProject } from "@/types/interface"
 
-export default fetchProject;
+export default async function fetchProject(): Promise<IProject[]> {
+  const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/projects`)
+  const data = await response.json()
+
+  // Parse the JSON string technologies into an array
+  return data.map((project: any) => ({
+    ...project,
+    technologies: JSON.parse(project.technologies || "[]"),
+  }))
+}
