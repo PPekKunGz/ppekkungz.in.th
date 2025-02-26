@@ -19,7 +19,7 @@ export const metadata = {
     description: "อยากรู้ว่าผมเป็นใครทำงานอะไรหรือทุกวันนี้มีประวัติการทำงานอะไรมาบ้างสามารถเช็คได้ที่เว็ปผมเลย!!",
     images: [
       {
-        url: '/favicon.ico',
+        url: 'https://ppekkungz.in.th/avatar.png',
         width: 200,
         height: 200,
         alt: 'ppekkungz',
@@ -33,7 +33,7 @@ export const metadata = {
     site: 'เว็ปไซต์ของ @PPekKunGzDev',
     creator: '@PPekKunGzDev',
     images: [
-      '/favicon.ico',
+      'https://ppekkungz.in.th/avatar.png',
     ],
   },
 
