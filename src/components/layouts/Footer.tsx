@@ -11,7 +11,9 @@ export default function Footer() {
     
     return (
         <div className={`mt-2 w-[${width}px] overflow-hidden flex flex-col items-center justify-center`}>
-            <DiscordMessage/>
+            {pathname !== "/birthday" && (
+                <DiscordMessage/>
+            )}
             {isHomePage && (
                 <div className="lg:w-2/6 w-full">
                     {/* <InteractiveGridPatternUI /> */}
