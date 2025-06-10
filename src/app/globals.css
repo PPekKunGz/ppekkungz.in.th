@@ -303,3 +303,37 @@
   background-size: 200% 200%;
   animation: gradientAnimation 15s ease infinite;
 }
+/* Glassmorphism effects */
+.backdrop-blur-lg {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Background gradient */
+.dark .bg-gray-900 {
+  background: linear-gradient(135deg, #121212 0%, #1e1e1e 100%);
+}
+
+.bg-gray-100 {
+  background: linear-gradient(135deg, #f5f5f5 0%, #e5e5e5 100%);
+}
+
+/* Animation for playing indicator */
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.7;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
