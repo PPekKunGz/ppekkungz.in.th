@@ -102,43 +102,19 @@ export default function BirthdayWebsite() {
             return
         }
 
-        const newWish = {
-            id: wishes.length + 1,
-            name: senderName,
-            message: wish,
-            timestamp: new Date().toISOString(),
-        }
+        const res = await fetch("/api/wishes", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                name: senderName,
+                message: wish,
+            }),
+        })
 
+        const newWish = await res.json()
         setWishes([newWish, ...wishes])
-
-        const webhookUrl = process.env.NEXT_PUBLIC_WEBHOOK_URL
-        if (webhookUrl) {
-            try {
-                await fetch(webhookUrl, {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify({
-                        username: "Birthday Wishes",
-                        embeds: [
-                            {
-                                title: `อวยพรวันเกิดโดยคุณ - ${senderName}`,
-                                description: wish,
-                                color: 10181046,
-                                timestamp: new Date().toISOString(),
-                            },
-                        ],
-                    }),
-                })
-            } catch (error) {
-                console.error("Error sending to webhook:", error)
-            }
-        }
-
         setWish("")
         setSenderName("")
-
         toast.success("Your wish has been sent successfully!")
     }
 
@@ -155,6 +131,15 @@ export default function BirthdayWebsite() {
     const closePopup = () => {
         setShowPopup(false)
     }
+
+    useEffect(() => {
+        const loadWishes = async () => {
+          const res = await fetch("/api/wishes")
+          const data = await res.json()
+          setWishes(data)
+        }
+        loadWishes()
+      }, [showContent])
 
     return (
         <>
@@ -219,7 +204,7 @@ export default function BirthdayWebsite() {
                                 transition={{ duration: 0.5 }}
                                 className="text-center mb-8"
                             >
-                                <h1 className="text-4xl font-bold text-purple-800 dark:text-purple-300 mb-2">
+                                <h1 className="text-3xl font-bold text-purple-800 dark:text-purple-300 mb-2">
                                     🎉 Happy Birthday! 🎉{/* {isBirthday ? "🎉 Happy Birthday! 🎉" : "Birthday Countdown"} */}
                                 </h1>
                                 <p className="text-lg text-gray-600 dark:text-gray-300">ฉลองวันพิเศษของ {name}</p>
@@ -305,7 +290,7 @@ export default function BirthdayWebsite() {
                                                 <Clock className="h-5 w-5" /> นับถอยหลังสู่วันเกิด
                                             </CardTitle>
                                             <CardDescription className="text-purple-100 dark:text-purple-200">
-                                            เวลาที่เหลืออยู่จนถึงวันพิเศษ
+                                                เวลาที่เหลืออยู่จนถึงวันพิเศษ
                                             </CardDescription>
                                         </CardHeader>
                                         <CardContent className="pt-6">
