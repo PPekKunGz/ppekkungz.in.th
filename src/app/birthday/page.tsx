@@ -117,6 +117,7 @@ export default function BirthdayWebsite() {
     setWish("")
     setSenderName("")
     toast.success("ส่งคำอวยพรเรียบร้อยแล้ว!")
+    window.location.reload()
   }
 
   const shareWebsite = async () => {
