@@ -26,7 +26,7 @@ export default function Header() {
         { name: "Home", href: "/" },
         { name: "About", href: "/about" },
         { name: "Projects", href: "/projects" },
-        { name: "Special Day", href: "/birthday" },
+        //{ name: "Special Day", href: "/birthday" },
         { name: "Contact", href: "https://github.com/PPekKunGz" },
     ]
 
